@@ -1,7 +1,3 @@
-import 'package:first_assignment/view/column_view.dart';
-import 'package:first_assignment/view/dashboard_view.dart';
-import 'package:first_assignment/view/column_view.dart';
-import 'package:first_assignment/view/containerview.dart';
 import 'package:first_assignment/view/load_image_view.dart';
 
 import 'package:flutter/material.dart';
