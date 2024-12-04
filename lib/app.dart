@@ -1,4 +1,9 @@
+import 'package:first_assignment/view/column_view.dart';
 import 'package:first_assignment/view/dashboard_view.dart';
+import 'package:first_assignment/view/column_view.dart';
+import 'package:first_assignment/view/containerview.dart';
+import 'package:first_assignment/view/load_image_view.dart';
+
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DashboardView(),
+      home: LoadImageView(),
     );
   }
 }
