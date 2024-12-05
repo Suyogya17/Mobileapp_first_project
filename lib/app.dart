@@ -1,5 +1,5 @@
-import 'package:first_assignment/view/load_image_view.dart';
-
+import 'package:first_assignment/view/listview_homework.dart';
+import 'package:first_assignment/view/student_output_view.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -7,9 +7,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoadImageView(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const ListviewHomework(),
+        '/output': (context) => const StudentOutputView(),
+      },
     );
   }
 }

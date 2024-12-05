@@ -7,7 +7,7 @@ class LoadImageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Image Page"),
+          title: const Text("Image Page"),
         ),
         body: SafeArea(
             child: SizedBox(
