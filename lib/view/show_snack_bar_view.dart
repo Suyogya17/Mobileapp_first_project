@@ -1,3 +1,4 @@
+import 'package:first_assignment/core/common/my_snackbar.dart';
 import 'package:flutter/material.dart';
 
 class ShowSnackbarView extends StatefulWidget {
@@ -37,12 +38,14 @@ class _ShowSnackbarViewState extends State<ShowSnackbarView> {
           child: Column(
         children: [
           ElevatedButton(
-            onPressed: () => _showSnackBar(),
-            child: const Text("Show Message 1"),
+            onPressed: () =>
+                showmySnackBar(context: context, message: "messagw1"),
+            child: const Text("holoo"),
           ),
           ElevatedButton(
-            onPressed: () => _showMessageTwo(),
-            child: const Text("Show Message 2"),
+            onPressed: () =>
+                showmySnackBar(context: context, message: "message2000"),
+            child: const Text("helloo22020"),
           ),
         ],
       )),

@@ -17,14 +17,22 @@ class StudenListView extends StatelessWidget {
         itemCount: lstStudent.length,
         itemBuilder: (context, index) {
           return ListTile(
-            leading: Icon(Icons.person),
+            leading: const Icon(Icons.person),
             title:
-                Text(lstStudent[index].fname + '  ' + lstStudent[index].lname),
+                Text('${lstStudent[index].fname}  ${lstStudent[index].lname}'),
             subtitle: Text(lstStudent[index].city),
             trailing: IconButton(
               onPressed: () {},
               icon: const Icon(Icons.delete),
             ),
+            onTap: () {
+              // Naavigation
+              Navigator.pushNamed(
+                context,
+                "/personview",
+                arguments: lstStudent[index],
+              );
+            },
           );
         },
       ),
